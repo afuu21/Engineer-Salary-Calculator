@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Engineer Salary Calculator</title>
+</head>
+    <body>
+        <div class="maindiv">
+        <h1>Engineer Salary Calculator</h1>
+
+        Current Salary <input type="number"  id="principal" onchange="validateAmount()">  <br/><br>
+        Comany size <input type="range" id="rate" min="1" max="3" step="1" value="0" onchange="getSliderValue()"><span id="rateSpan">1</span>  <br/><br>
+
+        After how many years: <select id="years">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    
+</select> <br/><br>
+        Expected incremented salary : <span id="result"></span><br><br>
+
+        <button onclick="compute()">Compute Salary</button><br><br>
+
+        <span id="result">
+
+</span>
+<footer>
+
+        &#169; Designed by Afnan
+
+
+</footer>
+    </div>
+    </body>
+</html>
